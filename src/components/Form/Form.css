@@ -1,0 +1,27 @@
+.search-form{
+    width: 100%;
+    box-shadow: 0px 0px 15px 1px #97242400;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.search-form__input{
+    width: 85%;
+    padding: 10px;
+    border: none;
+    background: #beb6b67c;
+    /* background: none; */
+    border-right: 1px solid rgba(0, 0, 0, 0.274);
+    outline: 0;
+}
+.search-form__input::placeholder{
+    color: black;
+}
+.search-form__btn{
+    width: 15%;
+    padding: 10px 0;
+    border: none;
+    background:  #beb6b679;
+}
+.search-pic{
+    width: 20%;
+}
