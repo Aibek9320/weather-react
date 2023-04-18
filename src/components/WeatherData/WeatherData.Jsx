@@ -5,8 +5,8 @@ const WeatherData = ({weather}) => {
         const time = new Date(timeStamp*1000)
         const hour = time.getHours();
         const minutes = time.getMinutes();
-        const sec = time.getSeconds();
-        return `${hour} : ${minutes} : ${sec}`
+        // const sec = time.getSeconds();
+        return `${hour} : ${minutes}`
     }
   return (
     <div className="weather">
@@ -26,7 +26,12 @@ const WeatherData = ({weather}) => {
            }
         </div>
         <div className="weather__secondary">
-
+           <div>SUNRISE {timeGetHandler(weather.sys.sunrise)}</div>
+           <div>SUNSET {timeGetHandler(weather.sys.sunset)}</div>
+           <div>WIND {weather.wind.speed} m/s</div>
+           <div>FEELS LIKE {(weather.main.feels_like -273.15).toFixed(1)}°C</div>
+           <div>HUMIDITY {weather.main.humidity}%</div>
+           <div>PRESSURE {weather.main.pressure} hPa</div>
         </div>
         
     </div>
