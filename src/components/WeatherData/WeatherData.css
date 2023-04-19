@@ -1,6 +1,38 @@
-.weather__main-info{
+/* .weather{
+    position: relative;
+} */
+/* .weather__main-info{
+   
+} */
+/* .weather__main-info{
+    position: relative;
+} */
+.weather__main-info-div{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    width: 150px
+}
+.weather__main-info-div_first{
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     
+    width: 150px
+}
+.weather__main-info-div_second{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px
+}
+.weather__secondary{
+    padding-left: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns:1fr 1fr 
     
 }
+
